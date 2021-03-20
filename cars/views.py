@@ -26,7 +26,6 @@ def car_detail(request, id):
     data = {
         'single_car': single_car,
     }
-
     return render(request, 'cars/car_detail.html', data)
 
 def search(request):
