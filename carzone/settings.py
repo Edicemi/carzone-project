@@ -10,8 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
-import dj_database_url
+
 from pathlib import Path
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'c93)lu3qg!=7tpz7k%8r2r*&6_k$x)vt7d1shkp5-po5*sb-p$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['enigmatic-peak-59479.herokuapp.com/', 'carzoneapp.co', 'www.carzoneapp.co']
+ALLOWED_HOSTS = ['*']
 
 LOGIN_REDIRECT_URL = 'dashboard'
 
@@ -168,3 +169,5 @@ EMAIL_USE_TLS = True
 
 # whitenoise settings
 STATICFILES_STORAGE ='whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+django_heroku.settings(locals())

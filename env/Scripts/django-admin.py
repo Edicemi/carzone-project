@@ -1,4 +1,4 @@
-#!c:\users\user\desktop\carzone-project\env\scripts\python.exe
+#!C:\Users\USER\Desktop\carzone-project\env\Scripts\python.exe
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
