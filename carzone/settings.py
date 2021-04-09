@@ -26,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'c93)lu3qg!=7tpz7k%8r2r*&6_k$x)vt7d1shkp5-po5*sb-p$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['carzoneapps.herokuapp.com']
+ALLOWED_HOSTS = ['edicemi.github.io/carzone-project/']
 
 LOGIN_REDIRECT_URL = 'dashboard'
 
