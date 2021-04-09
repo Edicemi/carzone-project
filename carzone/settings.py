@@ -28,7 +28,7 @@ SECRET_KEY = 'c93)lu3qg!=7tpz7k%8r2r*&6_k$x)vt7d1shkp5-po5*sb-p$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['edicemi.github.io/carzone-project/']
+ALLOWED_HOSTS = ['*']
 
 LOGIN_REDIRECT_URL = 'dashboard'
 
