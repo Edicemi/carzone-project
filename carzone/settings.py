@@ -94,15 +94,7 @@ WSGI_APPLICATION = 'carzone.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'carzone_db',
-#         'USER': 'postgres',
-#         'PASSWORD': '64648612',
-#         'HOST': 'localhost',
-#     }
-# }
+
 
 DATABASES = {'default': dj_database_url.config(default='postgres://user:64648612@localhost/carzone_db')}
 
@@ -163,8 +155,8 @@ SITE_ID = 1
 # sending email
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'victoriataiwo1998@gmail.com'
-EMAIL_HOST_PASSWORD = '64648612'
+EMAIL_HOST_USER = 'victoriataiwo@gmail.com'
+EMAIL_HOST_PASSWORD = '*******'
 EMAIL_USE_TLS = True
 
 
